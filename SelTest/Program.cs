@@ -86,7 +86,7 @@ public class Program
         // Open the page and switch to it
         foreach (var element in jobResults)
         {
-            if (element.Text != null && element.Text.Contains(ref3674c))
+            if (element.Text.Contains(ref3674c))
             {
                 element.Click();
                 break;
