@@ -58,7 +58,7 @@ public class Program
         var dropdownToggles = driver.FindElements(By.ClassName(dropdownToggle));
         foreach (var element in dropdownToggles)
         {
-            if (element.Text != null && element.Text.Equals(szakterulet))
+            if (element.Text.Equals(szakterulet))
             {
                 element.Click();
                 break;
@@ -68,7 +68,7 @@ public class Program
         var dropdownItems = driver.FindElements(By.ClassName(dropdownItem));
         foreach (var element in dropdownItems)
         {
-            if (element.Text != null && element.Text.Equals(test))
+            if (element.Text.Equals(test))
             {
                 element.Click();
                 break;
